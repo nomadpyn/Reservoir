@@ -18,6 +18,7 @@ public:
 		for (int i = 0; i < l; i++)
 			this->name[i] = nameP[i];	
 		surface = calcSurface();
+		volume = calcVolume();
 	}
 	Reservoir() :Reservoir("No name", 1, 1, 1) {}
 	~Reservoir() {
@@ -25,6 +26,7 @@ public:
 	}
 	void print() const ;
 	double calcSurface();
+	double calcVolume();
 
 };
 

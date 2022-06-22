@@ -9,9 +9,14 @@ void Reservoir::print() const
 	cout << "Max width is " << this->width << " | ";
 	cout << "Max lenght is " << this->length << " | ";
 	cout << "Max depth is " << this->depth  << " | ";
-	cout << "Surface is " << this->surface << endl;
+	cout << "Surface is " << this->surface << " | ";
+	cout << "Volume is " << this->volume << endl;
 }
 
 double Reservoir::calcSurface() {
 	return (this->width * this->length);
+}
+
+double Reservoir::calcVolume() {
+	return (this->width * this->length * this->depth);
 }
