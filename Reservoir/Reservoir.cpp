@@ -3,10 +3,15 @@
 
 using namespace std;
 
-void Reservoir::print()
+void Reservoir::print() const
 {
-	cout << "Reservoir name - " << name << " | ";
-	cout << "Max width is " << width << " | ";
-	cout << "Max lenght is " << length << " | ";
-	cout << "Max depth is " << depth  << endl;
+	cout << "Reservoir name - " << this->name << " | ";
+	cout << "Max width is " << this->width << " | ";
+	cout << "Max lenght is " << this->length << " | ";
+	cout << "Max depth is " << this->depth  << " | ";
+	cout << "Surface is " << this->surface << endl;
+}
+
+double Reservoir::calcSurface() {
+	return (this->width * this->length);
 }
