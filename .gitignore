@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+*.sln
+*.vcxproj
+*.filters
+*.user
+*.vsidx
+*.lock
+*.db
+.vs/Reservoir/v17/Browse.VC.opendb
+*.db-wal
+*.db-shm
+.vs/Reservoir/v17/.suo
+*.ipch
