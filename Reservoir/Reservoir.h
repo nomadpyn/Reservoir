@@ -21,6 +21,13 @@ public:
 		volume = calcVolume();
 	}
 	Reservoir() :Reservoir("No name", 1, 1, 1) {}
+	Reservoir(const Reservoir & other) :
+		width{ other.width }, length{ other.length }, depth{ other.depth }, surface{ other.surface }, volume{ other.volume }{
+		int l = strlen(other.name) + 1;
+		this->name = new char[l];
+		for (int i = 0; i < l; i++)
+			this->name[i] = other.name[i];
+	}
 	~Reservoir() {
 		delete[]name;
 	}
