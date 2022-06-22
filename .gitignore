@@ -42,3 +42,9 @@
 *.db-shm
 .vs/Reservoir/v17/.suo
 *.ipch
+*.recipe
+*.ilk
+*.tlog
+*.log
+*.idb
+*.pdb

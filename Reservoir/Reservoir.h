@@ -20,5 +20,6 @@ public:
 	~Reservoir() {
 		delete[]name;
 	}
+	void print();
 };
 
