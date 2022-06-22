@@ -31,6 +31,8 @@ public:
 	~Reservoir() {
 		delete[]name;
 	}
+
+	bool operator ==(const Reservoir& other);
 	void print() const ;
 	double calcSurface();
 	double calcVolume();

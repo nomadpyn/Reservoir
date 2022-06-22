@@ -3,6 +3,10 @@
 
 using namespace std;
 
+bool Reservoir::operator==(const Reservoir& other){
+	return this->surface == other.surface;
+}
+
 void Reservoir::print() const
 {
 	cout << "Reservoir name - " << this->name << " | ";
