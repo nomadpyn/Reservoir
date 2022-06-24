@@ -37,6 +37,11 @@ public:
 	void print() const;
 	double calcSurface();
 	double calcVolume();
+	double GetWidht() const;
+	double GetLength() const;
+	double GetDepth() const;
+	double GetSurface() const;
+	double GetVolume() const;
 	 
 };
 

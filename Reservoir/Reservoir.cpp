@@ -48,3 +48,19 @@ double Reservoir::calcSurface() {
 double Reservoir::calcVolume() {
 	return (this->width * this->length * this->depth);
 }
+
+double Reservoir::GetWidht() const {
+	return this->width;
+}
+double Reservoir::GetLength() const {
+	return this->length;
+}
+double Reservoir::GetDepth() const {
+	return this->depth;
+}
+double Reservoir::GetSurface() const {
+	return this->surface;
+}
+double Reservoir::GetVolume() const {
+	return this->volume;
+}
