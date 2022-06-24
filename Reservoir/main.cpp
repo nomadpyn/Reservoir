@@ -12,7 +12,7 @@ int main() {
 	Reservoir d("Sea Galka", 1.15, 13.44, 2.14);
 	
 	bool c = a.compType(d);
-	cout << c << endl;
-
+	cout << b.GetName() << endl;
+	
 	return 0;
 }

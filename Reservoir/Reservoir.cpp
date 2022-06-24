@@ -64,3 +64,7 @@ double Reservoir::GetSurface() const {
 double Reservoir::GetVolume() const {
 	return this->volume;
 }
+char *Reservoir::GetName() const {
+	
+	return name;
+}

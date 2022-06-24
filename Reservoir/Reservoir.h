@@ -37,6 +37,7 @@ public:
 	void print() const;
 	double calcSurface();
 	double calcVolume();
+	char *GetName() const;
 	double GetWidht() const;
 	double GetLength() const;
 	double GetDepth() const;
