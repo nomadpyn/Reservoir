@@ -32,6 +32,7 @@ public:
 	}
 
 	bool operator ==(const Reservoir& other);
+	void operator =(const Reservoir& other);
 	bool compType(const Reservoir& other);
 	void print() const;
 	double calcSurface();

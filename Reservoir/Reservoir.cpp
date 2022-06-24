@@ -17,6 +17,20 @@ bool Reservoir::compType(const Reservoir& other) {
 return true;
 }
 
+void Reservoir::operator=(const Reservoir& other){
+	if (this->name != nullptr)
+		delete[] this->name;
+	int l = strlen(other.name) + 1;
+	this->name = new char[l];
+	for (int i = 0; i < l; i++)
+		this->name[i] = other.name[i];
+	this->width = other.width;
+	this->length = other.length;
+	this->depth = other.depth;
+	this->surface = other.surface;
+	this->volume = other.volume;
+}
+
 void Reservoir::print() const
 {
 	cout << "Reservoir name - " << this->name << " | ";
